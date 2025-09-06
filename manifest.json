@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "leeTRA",
+  "version": "1.0",
+
+  "description": "A tracker for leetcode completion consistency`.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["leeTRA.js"]
+    }
+  ]
+}
